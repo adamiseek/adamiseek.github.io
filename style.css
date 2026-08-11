@@ -496,6 +496,18 @@ main,
     font-size: 0.72rem;
     letter-spacing: 0.04em;
 }
+.project-link {
+    display: inline-block;
+    margin-top: 14px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--accent);
+    text-decoration: none;
+}
+.project-link:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
 
 /* Certifications */
 .cert-grid {
