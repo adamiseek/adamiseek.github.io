@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>adamiseek — Cybersecurity Engineer & Developer</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Adam (adamiseek) — cybersecurity engineer and full-stack developer from Slovakia. Penetration testing, infrastructure security, and systems engineering.">
+</head>
+<body>
+    <canvas id="net-canvas" aria-hidden="true"></canvas>
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="#top">
+                <span class="brand-glyph">&gt;_</span>
+                <span class="brand-name">adamiseek</span>
+            </a>
+            <nav class="site-nav" aria-label="Primary">
+                <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navList">
+                    <span></span><span></span><span></span>
+                </button>
+                <ul class="nav-list" id="navList">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#contact" class="nav-cta">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="hero" id="top">
+            <div class="hero-inner">
+                <p class="eyebrow">Full-stack Developer &amp; Cybersecurity Engineer — Slovakia</p>
+                <h1>I build things,<br>then I try to break them.</h1>
+                <p class="hero-lede">I'm Adam. I design and ship full-stack applications, then put on the other hat — red teaming, penetration testing, and hardening — to make sure they hold up.</p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">View projects</a>
+                    <a href="#contact" class="btn btn-ghost">Get in touch</a>
+                </div>
+            </div>
+            <div class="hero-terminal" aria-hidden="true">
+                <div class="terminal-bar">
+                    <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+                    <span class="terminal-title">adam@core: ~</span>
+                </div>
+                <div class="terminal-body">
+                    <p><span class="prompt">$</span> whoami</p>
+                    <p class="out">adamiseek — red teamer / dev / security</p>
+                    <p><span class="prompt">$</span> cat focus.txt</p>
+                    <p class="out">full-stack engineering, red teaming,<br>infrastructure hardening, automation</p>
+                    <p><span class="prompt">$</span> status --check</p>
+                    <p class="out ok">[ OK ] open to new work<span class="cursor">▌</span></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="panel about-panel">
+            <div class="section-header">
+                <span class="section-index">01</span>
+                <h2>About</h2>
+            </div>
+            <div class="about-grid">
+                <p class="about-text">Hi — I'm Adam, a builder from Slovakia who got hooked on the break-it-to-fix-it side of software. I make full-stack apps and small tools, then turn around and try to break them with the same enthusiasm: penetration testing, red teaming, hardening, threat modeling. The whole loop — write it, ship it, defend it — is what I enjoy most.</p>
+                <ul class="about-stats">
+                    <li><span class="stat-num">15+</span><span class="stat-label">bug bounties submitted</span></li>
+                    <li><span class="stat-num">10+</span><span class="stat-label">sites &amp; landing pages shipped</span></li>
+                    <li><span class="stat-num">2</span><span class="stat-label">sides of the same coin — build &amp; breach</span></li>
+                    <li><span class="stat-num">SK</span><span class="stat-label">based in Slovakia</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="skills" class="panel">
+            <div class="section-header">
+                <span class="section-index">02</span>
+                <div>
+                    <h2>Skills &amp; languages</h2>
+                    <p class="section-sub">Honest list of what I actually work with — details on request.</p>
+                </div>
+            </div>
+
+            <div class="filter-bar" role="tablist" aria-label="Skill categories">
+                <button class="filter-btn is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+                <button class="filter-btn" data-filter="lang" role="tab" aria-selected="false">Languages</button>
+                <button class="filter-btn" data-filter="security" role="tab" aria-selected="false">Security</button>
+                <button class="filter-btn" data-filter="infra" role="tab" aria-selected="false">Infrastructure</button>
+                <button class="filter-btn" data-filter="core" role="tab" aria-selected="false">Core Eng.</button>
+            </div>
+
+            <div class="chip-grid" id="chipGrid">
+                <!-- Languages -->
+                <span class="chip" data-cat="lang">Python</span>
+                <span class="chip" data-cat="lang">JavaScript</span>
+                <span class="chip" data-cat="lang">TypeScript</span>
+                <span class="chip" data-cat="lang">Go</span>
+                <span class="chip" data-cat="lang">Rust</span>
+                <span class="chip" data-cat="lang">C</span>
+                <span class="chip" data-cat="lang">C++</span>
+                <span class="chip" data-cat="lang">Java</span>
+                <span class="chip" data-cat="lang">PHP</span>
+                <span class="chip" data-cat="lang">Node.js</span>
+                <span class="chip" data-cat="lang">SQL</span>
+                <span class="chip" data-cat="lang">PostgreSQL</span>
+                <span class="chip" data-cat="lang">MySQL</span>
+                <span class="chip" data-cat="lang">HTML</span>
+                <span class="chip" data-cat="lang">CSS</span>
+                <span class="chip" data-cat="lang">Tailwind CSS</span>
+                <span class="chip" data-cat="lang">Shell</span>
+
+                <!-- Security -->
+                <span class="chip" data-cat="security">Penetration Testing</span>
+                <span class="chip" data-cat="security">Red Teaming</span>
+                <span class="chip" data-cat="security">Network Security</span>
+                <span class="chip" data-cat="security">Systems Hardening</span>
+                <span class="chip" data-cat="security">Incident Response</span>
+                <span class="chip" data-cat="security">Threat Modeling</span>
+                <span class="chip" data-cat="security">API Security</span>
+                <span class="chip" data-cat="security">Burp Suite</span>
+                <span class="chip" data-cat="security">Wireshark</span>
+                <span class="chip" data-cat="security">nmap</span>
+                <span class="chip" data-cat="security">Metasploit</span>
+                <span class="chip" data-cat="security">OSINT</span>
+                <span class="chip" data-cat="security">Digital Forensics</span>
+                <span class="chip" data-cat="security">Log Analysis</span>
+                <span class="chip" data-cat="security">Bug Bounty Hunting</span>
+
+                <!-- Infrastructure -->
+                <span class="chip" data-cat="infra">Linux</span>
+                <span class="chip" data-cat="infra">Git</span>
+                <span class="chip" data-cat="infra">Nginx</span>
+                <span class="chip" data-cat="infra">Docker</span>
+                <span class="chip" data-cat="infra">Networking</span>
+                <span class="chip" data-cat="infra">DevOps</span>
+                <span class="chip" data-cat="infra">Cloud</span>
+                <span class="chip" data-cat="infra">Infrastructure as Code</span>
+                <span class="chip" data-cat="infra">Automation</span>
+
+                <!-- Core engineering -->
+                <span class="chip" data-cat="core">Full-stack Web</span>
+                <span class="chip" data-cat="core">React</span>
+                <span class="chip" data-cat="core">API Design</span>
+                <span class="chip" data-cat="core">Algorithms &amp; Data Structures</span>
+                <span class="chip" data-cat="core">LLM Prompt Engineering</span>
+            </div>
+        </section>
+
+        <section id="projects" class="panel">
+            <div class="section-header">
+                <span class="section-index">03</span>
+                <div>
+                    <h2>Projects</h2>
+                    <p class="section-sub">A few things I've built and worked on.</p>
+                </div>
+            </div>
+            <div class="project-grid">
+                <article class="project-card">
+                    <h3>Bug Bounty Hunting</h3>
+                    <p>I hunt bugs on public bug bounty programs in my spare time — mostly web app flaws like broken access control, auth issues, and misconfigurations. 15+ reports submitted so far.</p>
+                    <span class="project-tag">Offensive</span>
+                </article>
+                <article class="project-card">
+                    <h3>Offensive Lab</h3>
+                    <p>A home lab where I practice red teaming the full loop — exploiting a target, then patching the same box so I understand both sides of a vulnerability.</p>
+                    <span class="project-tag">Offensive</span>
+                </article>
+                <article class="project-card">
+                    <h3>Secure Server Hardening</h3>
+                    <p>I run and harden my own Linux servers — locked-down SSH, firewalls, fail2ban, and audit logging. My VPS went from a stock image to a lockdown in a weekend.</p>
+                    <span class="project-tag">Defensive</span>
+                </article>
+                <article class="project-card">
+                    <h3>Web Builds</h3>
+                    <p>Shipped 10+ responsive sites and landing pages for small clients and side projects with plain HTML, CSS, and JavaScript — no frameworks, just the fundamentals.</p>
+                    <span class="project-tag">Web</span>
+                </article>
+                <article class="project-card">
+                    <h3>This Portfolio</h3>
+                    <p>Designed and hand-built this site from scratch — responsive, accessible, and lightweight. It doubles as a live test bed for my front-end and deployment work.</p>
+                    <span class="project-tag">Web</span>
+                </article>
+                <article class="project-card">
+                    <h3>Automation Toolkit</h3>
+                    <p>A growing collection of scripts that take the boring out of infrastructure — backups, monitoring, deployments, and health checks for the services I run.</p>
+                    <span class="project-tag">Automation</span>
+                </article>
+                <article class="project-card">
+                    <h3>AI Experiments</h3>
+                    <p>Small experiments with LLMs and agents — prompt engineering, and tools that automate busywork. Currently building a study app that turns notes into flashcards.</p>
+                    <span class="project-tag">AI</span>
+                </article>
+            </div>
+        </section>
+
+        <section id="certifications" class="panel">
+            <div class="section-header">
+                <span class="section-index">04</span>
+                <div>
+                    <h2>Certifications</h2>
+                    <p class="section-sub">Working on the next ones — this list keeps growing.</p>
+                </div>
+            </div>
+            <div class="cert-grid">
+                <article class="cert-card">
+                    <div class="cert-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2 3 6v6c0 5 3.8 8.7 9 10 5.2-1.3 9-5 9-10V6l-9-4Z"/>
+                            <path d="m9 12 2 2 4-4"/>
+                        </svg>
+                    </div>
+                    <div class="cert-body">
+                        <h3>CCNA: Introduction to Networking</h3>
+                        <p class="cert-issuer">Cisco Networking Academy</p>
+                    </div>
+                </article>
+                <article class="cert-card cert-card--placeholder">
+                    <div class="cert-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 5v14M5 12h14"/>
+                        </svg>
+                    </div>
+                    <div class="cert-body">
+                        <h3>Working on it</h3>
+                        <p class="cert-issuer">Next certifications in progress</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="panel contact-panel">
+            <div class="section-header">
+                <span class="section-index">05</span>
+                <h2>Get in touch</h2>
+            </div>
+            <div class="contact-card">
+               <p>Got a project or a security question? My inbox is always open — I usually reply within a day.</p>
+                <div class="contact-links">
+                    <a href="mailto:adamiseek@proton.me" class="btn btn-primary">Email me</a>
+                    <a href="https://github.com/adamiseek" class="btn btn-ghost" target="_blank" rel="noopener">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12c0 5.1 3.29 9.42 7.86 10.95.57.1.78-.25.78-.55 0-.27-.01-1.15-.02-2.09-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.05 11.05 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.7 5.4-5.27 5.69.41.36.78 1.06.78 2.14 0 1.55-.01 2.79-.01 3.17 0 .3.2.66.79.55A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg>
+                        GitHub
+                    </a>
+                    <a href="https://discord.com/users/adamiseek" class="btn btn-ghost" target="_blank" rel="noopener">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.32 4.37a19.8 19.8 0 0 0-4.9-1.52.07.07 0 0 0-.08.04c-.21.38-.45.87-.61 1.26a18.3 18.3 0 0 0-5.46 0 12.6 12.6 0 0 0-.62-1.26.08.08 0 0 0-.08-.04 19.74 19.74 0 0 0-4.9 1.52.07.07 0 0 0-.03.03C1.24 8.87.48 13.24.85 17.55a.08.08 0 0 0 .03.06 19.9 19.9 0 0 0 5.99 3.03.08.08 0 0 0 .08-.03c.46-.63.87-1.3 1.23-2a.08.08 0 0 0-.04-.11 13.1 13.1 0 0 1-1.87-.89.08.08 0 0 1-.01-.13c.13-.09.25-.19.37-.29a.07.07 0 0 1 .08-.01c3.93 1.79 8.18 1.79 12.06 0a.07.07 0 0 1 .08.01c.12.1.24.2.37.29a.08.08 0 0 1-.01.13c-.6.35-1.22.65-1.87.89a.08.08 0 0 0-.04.11c.36.7.78 1.37 1.23 2a.08.08 0 0 0 .08.03 19.83 19.83 0 0 0 6-3.03.08.08 0 0 0 .03-.06c.44-4.98-.74-9.31-3.12-13.15a.06.06 0 0 0-.03-.03ZM8.68 14.9c-1.18 0-2.15-1.08-2.15-2.42 0-1.33.95-2.42 2.15-2.42 1.21 0 2.17 1.1 2.15 2.42 0 1.34-.95 2.42-2.15 2.42Zm6.66 0c-1.18 0-2.15-1.08-2.15-2.42 0-1.33.95-2.42 2.15-2.42 1.21 0 2.17 1.1 2.15 2.42 0 1.34-.94 2.42-2.15 2.42Z"/></svg>
+                        Discord
+                    </a>
+                    <a href="https://instagram.com/adamiseek" class="btn btn-ghost" target="_blank" rel="noopener">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.55.22.95.47 1.37.89.42.42.67.82.89 1.37.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.55-.47.95-.89 1.37-.42.42-.82.67-1.37.89-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.37-.89 3.7 3.7 0 0 1-.89-1.37c-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.55.47-.95.89-1.37.42-.42.82-.67 1.37-.89.42-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07ZM12 0C8.74 0 8.33.01 7.05.07c-1.28.06-2.15.26-2.91.56a5.9 5.9 0 0 0-2.13 1.39A5.9 5.9 0 0 0 .62 4.14C.32 4.9.12 5.77.06 7.05 0 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.28.26 2.15.56 2.91.31.79.73 1.46 1.39 2.13.66.66 1.34 1.08 2.13 1.39.76.3 1.63.5 2.91.56C8.33 24 8.74 24 12 24s3.67-.01 4.95-.07c1.28-.06 2.15-.26 2.91-.56a5.9 5.9 0 0 0 2.13-1.39 5.9 5.9 0 0 0 1.39-2.13c.3-.76.5-1.63.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.28-.26-2.15-.56-2.91a5.9 5.9 0 0 0-1.39-2.13A5.9 5.9 0 0 0 19.86.63c-.76-.3-1.63-.5-2.91-.56C15.67.01 15.26 0 12 0Zm0 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84Zm0 10.16A4 4 0 1 1 16 12a4 4 0 0 1-4 4Zm6.41-10.4a1.44 1.44 0 1 1-1.44-1.44 1.44 1.44 0 0 1 1.44 1.44Z"/></svg>
+                        Instagram
+                    </a>
+                    <a href="https://tiktok.com/@adamiseek" class="btn btn-ghost" target="_blank" rel="noopener">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.6 5.82c-1.02-.9-1.65-2.16-1.72-3.58h-3.14v13.7c0 1.53-1.25 2.78-2.8 2.78a2.8 2.8 0 0 1-2.8-2.8c0-1.68 1.53-3 3.24-2.75v-3.2c-3.5-.34-6.24 2.36-6.24 5.95a5.94 5.94 0 0 0 5.94 5.94c3.29 0 5.95-2.66 5.95-5.94v-6.9a8.1 8.1 0 0 0 4.73 1.51V7.4a4.85 4.85 0 0 1-3.16-1.58Z"/></svg>
+                        TikTok
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="year"></span> adamiseek. Built by hand, hardened on purpose.</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
