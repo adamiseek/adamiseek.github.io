@@ -4,7 +4,7 @@ Personal portfolio and homepage of Adam, a security-minded full-stack developer 
 
 ## Live site
 
-- https://adamiseek.pages.dev
+- https://adamiseek.github.io
 
 ## Stack
 
